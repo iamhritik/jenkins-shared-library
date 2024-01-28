@@ -38,7 +38,8 @@ pipeline {
                                 repo_branch: "master",
                                 repo_creds: "github-creds",
                             )
-                            callLibraryTemplate.call2(
+                            def callLibraryTemplate2 = new poc.template.sample()
+                            callLibraryTemplate2.call2(
                                 message: "From shared library POC"
                             )
                         }
