@@ -37,7 +37,9 @@ pipeline {
                                 repo_url: "https://github.com/iamhritik/poc-repo.git",
                                 repo_branch: "master",
                                 repo_creds: "github-creds",
-                                // message: "From shared library POC"
+                            )
+                            callLibraryTemplate.call2(
+                                message: "From shared library POC"
                             )
                         }
                         catch (Exception e){
