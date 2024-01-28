@@ -3,7 +3,7 @@ package poc.template
 import poc.common.*
 import poc.main.*
 
-def call(Map stepParams){
+def call(Map stepParams) {
     git_checkout = new checkout()
     printMessage = new helloworld()
 

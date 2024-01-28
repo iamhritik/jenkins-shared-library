@@ -1,7 +1,7 @@
 package poc.common
 
-def gitCheckout(Map stepParams){
-    stage('Git Checkout'){
+def gitCheckout(Map stepParams) {
+    stage('Git Checkout') {
       echo 'Performing Git Checkout'
       repo_url = "${stepParams.repo_url}"
       repo_branch = "${stepParams.repo_branch}"
