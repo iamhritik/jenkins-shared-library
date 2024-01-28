@@ -38,6 +38,10 @@ pipeline {
                             // message: "From shared library POC"
                         )
                     }
+                    catch (Exception e){
+                        currentBuild.result = "FAILURE"
+                        echo "Faced some issue in the pipeline"
+                    }
             }
         }
     }
