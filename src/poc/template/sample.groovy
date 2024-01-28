@@ -1,7 +1,7 @@
 package poc.template
 
-package poc.common.*
-package poc.main.*
+import poc.common.*
+import poc.main.*
 
 def call(Map stepParams){
     git_checkout = new checkout()
