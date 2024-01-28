@@ -8,8 +8,8 @@ def call(Map stepParams) {
     printMessage = new helloworld()
 
     git_checkout.gitCheckout(
-        repo_url: "${stepParams.repo_url}"
-        repo_branch: "${stepParams.repo_branch}"
+        repo_url: "${stepParams.repo_url}",
+        repo_branch: "${stepParams.repo_branch}",
         repo_creds: "${stepParams.repo_creds}"
     )
 
